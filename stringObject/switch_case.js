@@ -11,5 +11,5 @@ function switchCase(s){
     return text;
 
 }
-let mixed_text = switchCase("CaTcH 22");
+let mixed_text = switchCase("cAtabTzZbbBB");
 console.log(mixed_text);
