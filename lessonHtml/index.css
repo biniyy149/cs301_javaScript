@@ -1,0 +1,68 @@
+h1{
+    color: red;
+    background-color: blue;
+}
+p{
+    color: green;
+    background-color: rgba(128, 128, 128, 0.267);
+}
+
+#mission {
+    font-style: italic;
+    color: #000000;
+    }
+    .special { /* any element with class="special" */
+    background-color: yellow; font-weight: bold;
+    }
+    p.shout { /* only p elements with class="shout" */
+    color: red;
+    font-family: cursive;
+    }
+    a:hover{
+        color: red;
+    }
+    a:visited{
+        color: blue;
+    }
+    
+h2 {
+    /* Can also be overline, line-through, blink, or none.
+    Effects can be combined */
+    text-decoration: underline overline;
+    /* Shadow is specified as an X-offset, a Y-offset, and an optional color */
+    text-shadow: -2px 3px green;
+    border: 5px solid rgba(0, 0, 255, 0.685);
+    }
+    p {
+    /* Alignment of text within its element,
+    can be left, right, center, or justify */
+    text-align: center;
+    line-height: 30px;
+    word-spacing: 30px;
+    /* Indent the first line */
+    text-indent: 50px;
+    }
+    body {
+        /* image to place in background */
+        background-image: url("../images/draft.jpg");
+        /* How bg image should be repeated */
+        /* can be repeat (default), repeat-x, repeat-y, or no-repeat */
+        background-repeat: repeat-x;
+        background-color: yellow;
+        font-size: 16px;
+        /* placement of bg image within element */
+        /* value consists of two tokens, can be top, left, right, bottom,
+        center, a percentage, or a length value in px, pt, etc */
+        background-position: 370px 20px;
+        }
+        p {
+        /* shorthand to set all background properties */
+        background: #ffffff url("image.png") no-repeat right top;
+        }
+        table, td, th {
+            border: 2px solid black;
+            }
+        table{
+            border-collapse: collapse;
+            }
+            

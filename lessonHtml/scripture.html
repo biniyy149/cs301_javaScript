@@ -3,30 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Applied Scripture</title>
+    <title>A program to say hallow</title>
     <script>
-        function makeAddress(){
-            let name = document.getElementById('nameInputBox').value;
-            let adress = document.getElementById('streetAdress').value;
-            let city = document.getElementById('cityName').value;
-            let state = document.getElementById('stateId').value;
-            let zipcode = document.getElementById('zipCode').value;
-            let fulAdress = name + " " + adress + " " + city + state + zipcode; 
-            document.getElementById('outputDiv').innerHTML = fulAdress;
+        function greetUser(){
+            let name = prompt("please enter ur name: ");
+            let greeting = "hello "+ name;
+            alert(greeting);
         }
     </script>
 </head>
 
 <body>
-    Name: <input type="text" id="nameInputBox"><br>
-    Street: <input type="text" id="streetAdress"><br>
-    City: <input type="text" id="cityName">
-    State: <input type="text" id="stateId">
-    Zip Code: <input type="text" id="zipCode"><br>
-
-
-    <button type="button" onclick="makeAddress()">Make Address</button>
-    <div id="outputDiv"></div>
+    <button type="button" onclick="greetUser()">Hello</button>
     
 </body>
 
