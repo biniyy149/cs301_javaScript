@@ -1,20 +1,16 @@
-function isPalindrome(str){
-    let temp  = str.toLowerCase();
-    let temparr = [];
-    for(let i=0;i<temp.length;i++){
-        temparr[i]
-    }
-}
+
 function testPalendrome(text){
-    let reversed = " ";
+    let temp = text.toLowerCase();
+    
+    let reversed = "";
     let palendrome = false;
-    for(let i = 0; i<text.length;i++){
-        reversed += text[i]+reversed;
+    for(let i = 0; i<temp.length;i++){
+        reversed = temp.charAt(i) + reversed;
         
         }
 
     
-    if(text === reversed){
+    if(temp === reversed){
         palendrome = true;
 
     }
@@ -22,5 +18,6 @@ function testPalendrome(text){
 }
     
 
-console.log(testPalendrome("madam"));
-["madam", "car"].map(s=>isPalindrome(s));
+console.log(testPalendrome("mAdaM"));
+console.log(["madam", "car"].map(s=>testPalendrome(s)));
+console.log(["madam", "car"].map(testPalendrome));
